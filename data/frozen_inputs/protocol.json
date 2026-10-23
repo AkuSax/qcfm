@@ -1,0 +1,123 @@
+{
+  "status": "FROZEN_BEFORE_FITTING_NATIVE_GATE_BLOCKED",
+  "hypothesis": "Different input patterns benefit from 2 continuous-affinity predictors combined by a learned gate.",
+  "decision": "Select a larger repair test only if the MoE passes all frozen rules.",
+  "development_target": "KLK5 only",
+  "records": 65,
+  "chemical_groups": 27,
+  "reserved_records_used": 0,
+  "Scp1_records_used": 0,
+  "endpoint": "log10(IC50 in micromolar units). Lower values mean stronger potency.",
+  "limits": {
+    "local_seconds": 5400,
+    "small_fits_max": 400,
+    "planned_small_fits": 305,
+    "recoverable_fit_retries_max": 95,
+    "full_member_forwards_max": 300,
+    "planned_full_member_forwards": 130,
+    "forward_retry_reserve": 170,
+    "full_member_backwards": 0,
+    "cloud_operations": 0,
+    "VM_starts": 0,
+    "structure_predictions": 0,
+    "weight_downloads": 0,
+    "package_installs": 0
+  },
+  "count_definition": "Count each ensemble-member fit separately. Count each full member forward before execution. Count failed attempts.",
+  "splits": "Use records.csv and splits.csv. Keep source chemical groups together. Use 5 outer and 2 inner folds.",
+  "features": "Use each member final continuous predictor input. Do not use upstream feature means.",
+  "architecture": {
+    "ordinary": "Deep-copy the exact checkpoint final continuous MLP. Train all its parameters.",
+    "moe": "2 experts: Linear(d,32), ReLU, Linear(32,16), ReLU, Linear(16,1). Gate: Linear(d,8), ReLU, Linear(8,2), Softmax.",
+    "matched": "Linear(d,w), ReLU, Linear(w,w), ReLU, Linear(w,1). Select integer w with nearest MoE parameter count. Require relative difference <=0.05.",
+    "moe_output": "Sum gate probability times expert output over 2 experts.",
+    "initialization": "Use native weights for ordinary. Use independent PyTorch default initialization for experts and matched. Initialize gate output weight and bias to 0. Use distinct member seeds.",
+    "gate_input": "Only the same member final predictor input. Exclude labels, source IDs, group IDs, and fold IDs."
+  },
+  "preprocessing": "Use identity input preprocessing for every neural model. Use unscaled labels. This preserves ordinary checkpoint inputs.",
+  "optimization": {
+    "optimizer": "AdamW",
+    "loss": "Mean squared error in native endpoint units",
+    "configurations": [
+      {
+        "learning_rate": 0.0001,
+        "weight_decay": 0.0001
+      },
+      {
+        "learning_rate": 0.001,
+        "weight_decay": 0.001
+      }
+    ],
+    "steps": 300,
+    "batch": "Full training partition",
+    "gradient_norm_clip": 5.0,
+    "dtype": "float32",
+    "threads": 2,
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "member_seed": "seed + 10000 * member",
+    "early_stopping": false
+  },
+  "tuning": "Use seed 1729. Select the lowest inner pooled ensemble MAE. Break ties with config 0. Give all neural models 2 configurations and 2 inner folds.",
+  "member_training": "Train each member on its own inputs and the same labels. Keep the native ensemble mean.",
+  "molecular_weight": "Keep the saved native flag false. The adapter retains the correction formula if the flag is true. Do not enable correction.",
+  "fingerprint": {
+    "method": "Tanimoto kernel ridge regression",
+    "radius": 2,
+    "bits": 2048,
+    "chirality": true,
+    "alpha": [
+      0.1,
+      1.0
+    ],
+    "centering": "Subtract only the training label mean. Add that mean to predictions.",
+    "seed_rule": "The predictor is deterministic. Repeat the same out-of-fold predictions for seed comparisons without extra fits."
+  },
+  "permutation_control": {
+    "seed": 77123,
+    "map": "permutation.csv",
+    "rule": "Permute labels only inside each current training partition. Keep validation and test labels unchanged. Tune and refit the full MoE pipeline.",
+    "acceptance": "For every seed, true-label MoE rho minus permuted-pipeline rho must be >=0.05. The paired 95% interval lower bound must exceed 0. True-label MAE minus permuted MAE must have interval upper bound <0.",
+    "limitation": "1 permutation supplies no permutation p-value."
+  },
+  "metrics": [
+    "Spearman",
+    "MAE",
+    "RMSE"
+  ],
+  "uncertainty": {
+    "method": "10000 paired bootstrap draws of whole chemical groups with replacement. Use percentile 2.5 and 97.5.",
+    "seed": 86021,
+    "fixed_predictions": true,
+    "constant_draws": "Retain MAE and RMSE. Omit undefined Spearman values. Report omitted draws.",
+    "limit": "Fixed-prediction intervals omit model-refit uncertainty and measurement uncertainty."
+  },
+  "acceptance": {
+    "per_seed_and_mean": "For each of 3 seeds and their metric means, compare MoE with ordinary and matched.",
+    "rho_difference_min": 0.05,
+    "mae_difference_upper95_max_exclusive": 0,
+    "rmse_difference_max": 0,
+    "permutation_rule_required": true,
+    "missing_or_failed_fit": "Defer if any required final prediction or scheduled fit remains missing.",
+    "otherwise": "Reject after complete valid evaluation. Defer after execution or agreement failure."
+  },
+  "parity": {
+    "atol": 1e-05,
+    "rtol": 1e-05,
+    "required": "Verify all 130 unchanged member scores, all 65 ensemble scores, all binary logits, and cached final predictor scores before any fitting.",
+    "stop": "Stop dependent work after any mismatch. Do not change tolerances or regenerate structures."
+  },
+  "freeze_scope": "Freeze structure, earlier affinity layers, pooling, shared affinity_out_mlp, and all binary layers.",
+  "retries": "Retry OSError or MemoryError only after recording a concrete remedy. Keep attempt logs. Other failures stop. Respect time and call limits.",
+  "boundaries": [
+    "Expert usage does not establish meaningful specialization.",
+    "Expert assignments do not establish physical mechanisms.",
+    "A failed MoE test does not prove absent useful information.",
+    "This study tests the final predictor only.",
+    "Broader claims require independent evaluation and ordinary affinity-module fine-tuning.",
+    "Training-pair overlap and blank source qualifiers remain unresolved."
+  ]
+}

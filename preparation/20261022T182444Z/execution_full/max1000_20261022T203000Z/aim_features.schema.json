@@ -1,0 +1,152 @@
+{
+  "schema": "qgcf.aim_features.v1",
+  "row_order": "records_csv",
+  "keys": {
+    "cids": "65 unicode IDs",
+    "boltz_atoms": "(65,max_atoms,128)",
+    "aim_atoms": "bound AIM (65,max_atoms,256)",
+    "aim_atoms_free": "free AIM control (65,max_atoms,256)",
+    "global_boltz": "(65,768), x1 then x2",
+    "atom_mask": "(65,max_atoms)",
+    "allowed": "(65,max_atoms,max_atoms), adjacency plus self",
+    "simple_scalars": [
+      "mmff94s_bound_minus_free_kcal_mol",
+      "formal_charge",
+      "heavy_atom_count",
+      "molecular_weight",
+      "clogp",
+      "tpsa",
+      "hbd",
+      "hba",
+      "rotatable_bonds",
+      "ring_count",
+      "count_C",
+      "count_N",
+      "count_O",
+      "count_S",
+      "count_F",
+      "count_Cl",
+      "count_Br",
+      "count_H"
+    ],
+    "aim_scalars": [
+      "aim_energy_bound_minus_free_eV",
+      "bound_force_rms_eV_per_angstrom",
+      "bound_force_max_eV_per_angstrom",
+      "bound_force_median_eV_per_angstrom",
+      "bound_force_p90_eV_per_angstrom",
+      "free_force_rms_eV_per_angstrom",
+      "free_force_max_eV_per_angstrom",
+      "free_force_median_eV_per_angstrom",
+      "free_force_p90_eV_per_angstrom",
+      "bound_charge_mean_all_atoms",
+      "bound_charge_std_all_atoms",
+      "bound_charge_abs_sum_all_atoms",
+      "bound_charge_min_all_atoms",
+      "bound_charge_max_all_atoms",
+      "free_charge_mean_all_atoms",
+      "free_charge_std_all_atoms",
+      "free_charge_abs_sum_all_atoms",
+      "free_charge_min_all_atoms",
+      "free_charge_max_all_atoms"
+    ],
+    "aim_scalars_free": [
+      "aim_energy_bound_minus_free_eV",
+      "bound_force_rms_eV_per_angstrom",
+      "bound_force_max_eV_per_angstrom",
+      "bound_force_median_eV_per_angstrom",
+      "bound_force_p90_eV_per_angstrom",
+      "free_force_rms_eV_per_angstrom",
+      "free_force_max_eV_per_angstrom",
+      "free_force_median_eV_per_angstrom",
+      "free_force_p90_eV_per_angstrom",
+      "bound_charge_mean_all_atoms",
+      "bound_charge_std_all_atoms",
+      "bound_charge_abs_sum_all_atoms",
+      "bound_charge_min_all_atoms",
+      "bound_charge_max_all_atoms",
+      "free_charge_mean_all_atoms",
+      "free_charge_std_all_atoms",
+      "free_charge_abs_sum_all_atoms",
+      "free_charge_min_all_atoms",
+      "free_charge_max_all_atoms"
+    ],
+    "feature_valid": "(65,) bool"
+  },
+  "scalar_units": {
+    "MMFF94s": "kcal/mol",
+    "AIM energy gap": "eV",
+    "AIM force statistics": "eV/angstrom",
+    "AIM charges": "calculator native dimensionless charges over all prepared atoms including H"
+  },
+  "scalar_statistics": "Force norms use heavy atoms only. AIM energies use bound-minus-free gap; no absolute AIM energy enters primary scalars.",
+  "missing": "NaN numerical rows; false validity; all 65 failure ledger rows retained",
+  "input_hashes": {
+    "records_sha256": "b6c9473de5dd8d09af35f5b5e42983498ee468a15e96c19b0ba066c3cc20791c",
+    "exact_inputs_sha256": "5dcbd0011ed01995fe76a71c12f62073be5a7905c7cb6e16e9cee7402fea1540",
+    "chemistry_sha256": "f8fbb3ff277968a9969affc9a21321019d8f33eedebd15ff198fc90fc73446a6"
+  },
+  "output_hashes": {
+    "npz_sha256": "ee7f4c5e74f9bb3b1950c98395249948f0910348858fea0df3f4384e195fbd34",
+    "ledger_sha256": "4bec4ae689b7b43aba9a7074af07658fe603bc3717575557eb462d897303da56"
+  },
+  "valid_rows": 62,
+  "denominator": 65,
+  "provenance": {
+    "preparation_protocol": {
+      "v2_proposal_path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\arm5_integration\\FROZEN_EXPERIMENT_PROPOSAL_v2_20261022.json",
+      "v2_proposal_sha256": "0b1a2d9e3bc97ef56b72f5c2844faa23f212f772018e5861b638e1b31cf2e291",
+      "v3_amendment_path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\protocol_amendment_v3.json",
+      "v3_amendment_sha256": "0d455b3b46f02ddf6ec7246c3f0f32d633c92b9d6d59643844b39bfad5512712",
+      "v3_rule": "MMFF94s max steps 1000 for bound hydrogen placement and each of 8 free ETKDGv3 conformers, globally applied to all 62 compatible ligands. Seed 1729, RDKit 2026.03.6, chemistry, maps, fixed bound heavy coordinates, and lowest-converged-energy rule unchanged."
+    },
+    "executed_code_sha256": {
+      "chemistry_prepare_run_local": "0e92eda40ab42b759f886ecf0014b9079826a137b5f5a48a0c994a98ea783fee",
+      "stage_prepared_inputs_run_local": "709c25274492efd72b242e0560ee5908f9e8a9a2dc848f0026768096c8ab76f3",
+      "extract_feature_batch_original": "7de04ab10ad4d3abf21ce9e2b7b380f8acbcfa077b0f4f5a698cc01d39b3aefe",
+      "extract_aim_features_original": "59fba60a4e13e296568eda54d16675753905168b1c3d32d682329ff810b43cf6",
+      "assemble_feature_bundle_original": "fb71abae39247060d5ca402661d22d11df72e042df911cd3274dcc9a151959b5"
+    },
+    "prepared_inputs": {
+      "ledger_path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\preparation_ledger.csv",
+      "ledger_sha256": "f99718a146dfc61eaa7725007e403effa1198e60b2e41982ca05ef10b6527365",
+      "summary_path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\preparation_summary.json",
+      "summary_sha256": "ddeec4b75bf38aec20c3e5e84e6cb620eebd9cb34f6eaf36b0cc13a51005b665",
+      "manifest_and_prep_receipt_aggregate_sha256": "16d526f67d090f8337d4730688159f29dfe70e1ca0fe6a556c3e8399999fa59b",
+      "manifests_verified": 124,
+      "fully_ready_rows": 62,
+      "held_stereo_rows": 3
+    },
+    "extraction": {
+      "batch_receipt_path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\aim_outputs\\batch_run_receipt.json",
+      "batch_receipt_sha256": "e7fe3791d510597f72069b4163b399eee84491319fd79e92d052eb5f04fab44e",
+      "attempt_ledger_path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\aim_attempt_ledger.jsonl",
+      "attempt_ledger_sha256": "9fb6e915f5c9cbe1f3d1c9425193c59ba5fc559067e5b050876ff94e65a9691f",
+      "attempted_calls": 124,
+      "successful_calls": 124,
+      "failed_calls": 0,
+      "call_cap": 130,
+      "all_outputs_finite_and_mapped": true,
+      "nitro_cid_1312679": {
+        "finite_output": true,
+        "total_formal_charge": 0,
+        "atom_specific_charges": [
+          -1,
+          0,
+          1
+        ],
+        "model_charge_domain_support": "unverified; finite output does not establish validated charge-domain support"
+      }
+    },
+    "feature_bundle": {
+      "npz_path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\aim_features.npz",
+      "npz_sha256": "ee7f4c5e74f9bb3b1950c98395249948f0910348858fea0df3f4384e195fbd34",
+      "failure_ledger_path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\bundle_failure_ledger.csv",
+      "failure_ledger_sha256": "4bec4ae689b7b43aba9a7074af07658fe603bc3717575557eb462d897303da56",
+      "row_count": 65,
+      "valid_rows": 62,
+      "denominator": 65
+    }
+  },
+  "feature_extraction_run": "max1000_20261022T203000Z"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "metric_rows": 102,
+  "bootstrap_rows": 210,
+  "tolerance": 1e-08,
+  "estimator_fits": 0,
+  "encoder_calls": 0,
+  "scientific_decision": "NO_PROMOTION"
+}

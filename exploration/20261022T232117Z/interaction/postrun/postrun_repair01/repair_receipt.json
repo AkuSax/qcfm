@@ -1,0 +1,20 @@
+{
+  "repair_id": "postrun_repair01",
+  "failed_pre_repair_sha256": "ff25acad1cdbb9c7c6776496f52ab13071258418ec620460b80dd0569c9dc38d",
+  "repaired_postrun_script_sha256": "c0646a0ce874814b654aa1763e959154a33835573c973c411dabb234f19c56a6",
+  "change": "Correct default AIM feature bundle path from fit_retry01 to its parent run directory.",
+  "diff_path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\exploration\\20261022T232117Z\\interaction\\postrun\\postrun_repair01\\source_diff.patch",
+  "failed_process_receipt": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\exploration\\20261022T232117Z\\interaction\\postrun\\postrun_repair01\\failed_attempt_process_receipt.json",
+  "failed_process_receipt_sha256": "17fc6a53ef6fe8c8f35b70a356bf1d276c150e60f5047864961fb57af06fecb8",
+  "successful_process_receipt": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\exploration\\20261022T232117Z\\interaction\\postrun\\attempt_02\\process_receipt.json",
+  "estimator_fits": 0,
+  "prediction_input_changed": false,
+  "frozen_rules_changed": false,
+  "frozen_gate_changed": false,
+  "transform_receipt_changed": false,
+  "successful_outputs": {
+    "decision_report.json": "49292d4df3470b5d4650fdab01c567829388f75ee9479a109ec7547b774ad7fb",
+    "decision_report.md": "ac34497796af479bce10eef07cc55c175af4385a444be4004a7fd334b48a273e",
+    "paired_bootstrap.csv": "ca94b151cb153e7dd484172134f3c201388ad41c0abded4a0433ca44930fedd0"
+  }
+}

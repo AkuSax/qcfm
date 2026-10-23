@@ -1,0 +1,16 @@
+{
+  "status": "FROZEN_BEFORE_FITTING",
+  "created_utc": "2026-10-22T23:26:38.8551269Z",
+  "plan_path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\exploration\\20261022T232117Z\\FROZEN_PLAN.md",
+  "plan_sha256": "530a7ff532fbc56b5291e9a73e4ffb0a40689a0623fced5172656f897d1d502c",
+  "planned_attempts": 1470,
+  "maximum_attempts": 1500,
+  "maximum_fitting_seconds": 14400,
+  "subagent_model": "gpt-6-luna",
+  "subagent_reasoning": "medium",
+  "authorization": "User authorized bounded local execution and audit in delegated task",
+  "no_new_outer_results_inspected": true,
+  "no_new_estimator_fits": true,
+  "design_corrections": "alpha0.1 after unit-trace block normalization; near-zero scale1e-12; RKHS kernel penalty; prior quantum_only mandatory comparator",
+  "audit_design_review": "No remaining blocker; awaiting runner preflight source audit"
+}

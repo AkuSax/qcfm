@@ -1,0 +1,46 @@
+{
+  "amendment": "v3 numerical-preparation amendment",
+  "created_before_execution": true,
+  "reason": "The frozen 200-step MMFF94s limit produced 56 fully prepared rows out of the required 59/65 minimum. Use one global numerical remedy for all 62 compatible records.",
+  "scope": "All 62 compatible records, including prior successes and failures. Preserve the three source-stereo holds.",
+  "only_scientific_change": {
+    "MMFF94s_max_steps": {
+      "old": 200,
+      "new": 1000,
+      "scope": "bound hydrogen placement and each of 8 free ETKDGv3 conformers"
+    }
+  },
+  "unchanged": {
+    "ETKDG": "ETKDGv3",
+    "seed": 1729,
+    "conformers": 8,
+    "RDKit": "2026.03.6",
+    "source_chemistry": "frozen per_record_coverage.csv and source smiles",
+    "atom_mapping": "frozen source_atom_indices and heavy atom bijection",
+    "bound_coordinates": "exact frozen x_pred heavy coordinates",
+    "energy_rule": "select lowest converged free conformer"
+  },
+  "selection": "No affinity, AIM, or prediction results were used. AIM calls before amendment: 0.",
+  "coverage_gate": "Preserve requirement of at least 59 of 65 full rows. Do not accept unconverged conformers.",
+  "source": {
+    "helper": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\orchestrator\\chemistry_prepare.py",
+    "helper_sha256": "057a84f8daa83984a16eebf7d602dd36b90d77fb96ed9b940f4f496a4dee4833",
+    "stager": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\arm5_integration\\stage_prepared_inputs.py",
+    "stager_sha256": "5d28adf4b7d4ac943abb326d9d56c8e882a60afe1b686e29a84f669234c33f34"
+  },
+  "run_local": {
+    "helper": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\chemistry_prepare.py",
+    "helper_sha256": "0e92eda40ab42b759f886ecf0014b9079826a137b5f5a48a0c994a98ea783fee",
+    "stager": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\stage_prepared_inputs.py",
+    "stager_sha256": "13945cd6988054756fad54f7e0304b45101d6b05d727d97f4a043c3a508f9931",
+    "chemistry_prepare": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\chemistry_prepare.py",
+    "chemistry_prepare_sha256": "0e92eda40ab42b759f886ecf0014b9079826a137b5f5a48a0c994a98ea783fee",
+    "stage_prepared_inputs": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\stage_prepared_inputs.py",
+    "stage_prepared_inputs_sha256": "709c25274492efd72b242e0560ee5908f9e8a9a2dc848f0026768096c8ab76f3"
+  },
+  "diffs": {
+    "helper": "Only MAX_STEPS 200 to 1000.",
+    "stager": "Run-local package-root resolution and helper import path only."
+  },
+  "execution_started": false
+}

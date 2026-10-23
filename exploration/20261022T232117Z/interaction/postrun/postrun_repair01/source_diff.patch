@@ -1,0 +1,11 @@
+--- pre_repair
++++ post_repair
+@@ -17,7 +17,7 @@
+ PLAN = RUN / "FROZEN_PLAN.md"
+ ARM = ROOT / "preparation" / "20261022T182444Z" / "arm4_protocol"
+ PRIOR = ROOT / "preparation" / "20261022T182444Z" / "execution_full" / "max1000_20261022T203000Z" / "fit_retry01"
+-FEATURES = PRIOR / "aim_features.npz"
++FEATURES = PRIOR.parent / "aim_features.npz"
+ DEFAULT_PREDICTIONS = RUN / "classical" / "predictions.csv"
+ BOOTSTRAP_SEED = 1729
+ BOOTSTRAP_DRAWS = 5000

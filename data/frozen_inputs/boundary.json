@@ -1,0 +1,37 @@
+{
+  "status": "PINNED_SOURCE_INSPECTED_CHECKPOINT_VALIDATION_BLOCKED",
+  "commit": "cb04aeccdd480fd4db707f0bbafde538397fa2ac",
+  "source_files": [
+    {
+      "path": "results\\representation_diagnosis\\20261015\\attempt02\\source\\boltz\\model\\modules\\affinity.py",
+      "url": "https://raw.githubusercontent.com/jwohlwend/boltz/cb04aeccdd480fd4db707f0bbafde538397fa2ac/src/boltz/model/modules/affinity.py",
+      "sha256": "164b48db0ae40eab2318724ebafcd5ad92bbf0c38f8d4eb940dd25eac07540f4",
+      "capture_receipt_sha256": null,
+      "capture_hash_match": null
+    },
+    {
+      "path": "results\\representation_diagnosis\\20261015\\attempt02\\source\\boltz\\model\\models\\boltz2.py",
+      "url": "https://raw.githubusercontent.com/jwohlwend/boltz/cb04aeccdd480fd4db707f0bbafde538397fa2ac/src/boltz/model/models/boltz2.py",
+      "sha256": "c3f21a4c5e31bdcb81709da131b201944c48d11e00e52aaadd15b3e2512568ab",
+      "capture_receipt_sha256": "c3f21a4c5e31bdcb81709da131b201944c48d11e00e52aaadd15b3e2512568ab",
+      "capture_hash_match": true
+    }
+  ],
+  "checkpoint_sha256": "dcc5cd3722b1c9eaa34267e4ae32f55cbbf1963f4c19319381ccfa30fdd2ca9e",
+  "ensemble_members": [
+    "affinity_module1",
+    "affinity_module2"
+  ],
+  "continuous_predictor": "affinity_heads.to_affinity_pred_value",
+  "input": "g at the pre-hook of to_affinity_pred_value, after pooling and affinity_out_mlp",
+  "binary_branch": [
+    "affinity_heads.to_affinity_pred_score",
+    "affinity_heads.to_affinity_logits_binary"
+  ],
+  "native_predictor": "Linear(d,d), ReLU, Linear(d,d), ReLU, Linear(d,1)",
+  "dimension_rule": "Read d from the strict-loaded checkpoint predictor. Do not infer d from upstream tensors.",
+  "checkpoint_boundary_verified": false,
+  "remaining_gate": "Strict-load the verified checkpoint. Match installed source hashes. Verify each member score and ensemble score.",
+  "affinity_source_receipt_limit": "The receipt audits 107 package files. It retains no individual affinity.py hash.",
+  "feature_substitution_allowed": false
+}

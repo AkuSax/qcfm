@@ -1,0 +1,2578 @@
+{
+  "cache_reuse_table": [
+    {
+      "cache_key": "71b17c65550737a5090434a09ac0ae218722c1b2d329e30414c41486b4b766ec",
+      "dataset": "hill_sensitivity",
+      "method": "boltz",
+      "model_seed": 2718,
+      "origin_attempt": 472,
+      "origin_dataset": "primary",
+      "origin_outer_fold": 4,
+      "origin_stage": "inner_stack_crossfit",
+      "outer_fold": 4,
+      "params": {
+        "alpha": 0.1,
+        "feature": "boltz"
+      },
+      "predict_ids": [
+        "712603",
+        "751506",
+        "828588",
+        "828590",
+        "969710",
+        "976363",
+        "977140",
+        "1084416",
+        "1088427",
+        "1088428",
+        "2772705",
+        "3586642"
+      ],
+      "prediction_sha256": "79a560133e4480704b4d2a77f5ed4bfb49820b0c1613f7e14e95c2e5f9c2f47b",
+      "stage": "inner_stack_crossfit",
+      "train_ids": [
+        "646525",
+        "647599",
+        "651936",
+        "653862",
+        "655490",
+        "3236830",
+        "3240114",
+        "3241895",
+        "3243128",
+        "3796366",
+        "7202802"
+      ]
+    },
+    {
+      "cache_key": "c8691d6c02b17e95456d7fae363819a69ad0aa0e91487ec6ca622472c7717b3a",
+      "dataset": "hill_sensitivity",
+      "method": "aim",
+      "model_seed": 2718,
+      "origin_attempt": 473,
+      "origin_dataset": "primary",
+      "origin_outer_fold": 4,
+      "origin_stage": "inner_stack_crossfit",
+      "outer_fold": 4,
+      "params": {
+        "alpha": 0.1,
+        "feature": "aim"
+      },
+      "predict_ids": [
+        "712603",
+        "751506",
+        "828588",
+        "828590",
+        "969710",
+        "976363",
+        "977140",
+        "1084416",
+        "1088427",
+        "1088428",
+        "2772705",
+        "3586642"
+      ],
+      "prediction_sha256": "4169cb853d27866aea64e48dc96be63aea87269e6fa391546f984ff2ce1d906a",
+      "stage": "inner_stack_crossfit",
+      "train_ids": [
+        "646525",
+        "647599",
+        "651936",
+        "653862",
+        "655490",
+        "3236830",
+        "3240114",
+        "3241895",
+        "3243128",
+        "3796366",
+        "7202802"
+      ]
+    },
+    {
+      "cache_key": "32e13b554dc42be088889ff227b19b93e4ebbea64f8a380148985187a4ac58e2",
+      "dataset": "hill_sensitivity",
+      "method": "chem",
+      "model_seed": 2718,
+      "origin_attempt": 474,
+      "origin_dataset": "primary",
+      "origin_outer_fold": 4,
+      "origin_stage": "inner_stack_crossfit",
+      "outer_fold": 4,
+      "params": {
+        "alpha": 0.1,
+        "feature": "chem"
+      },
+      "predict_ids": [
+        "712603",
+        "751506",
+        "828588",
+        "828590",
+        "969710",
+        "976363",
+        "977140",
+        "1084416",
+        "1088427",
+        "1088428",
+        "2772705",
+        "3586642"
+      ],
+      "prediction_sha256": "df54e9b4cd5b42cc7cee47b490d58d68e42a1b98625c6d20c57dad017e6dee33",
+      "stage": "inner_stack_crossfit",
+      "train_ids": [
+        "646525",
+        "647599",
+        "651936",
+        "653862",
+        "655490",
+        "3236830",
+        "3240114",
+        "3241895",
+        "3243128",
+        "3796366",
+        "7202802"
+      ]
+    },
+    {
+      "cache_key": "f3eedcd98a87da459c2d70c74659a97dd52026f1f259857550d778e7a2365b0b",
+      "dataset": "hill_sensitivity",
+      "method": "boltz",
+      "model_seed": 2718,
+      "origin_attempt": 475,
+      "origin_dataset": "primary",
+      "origin_outer_fold": 4,
+      "origin_stage": "inner_stack_crossfit",
+      "outer_fold": 4,
+      "params": {
+        "alpha": 0.1,
+        "feature": "boltz"
+      },
+      "predict_ids": [
+        "646525",
+        "647599",
+        "651936",
+        "653862",
+        "655490",
+        "3236830",
+        "3240114",
+        "3241895",
+        "3243128",
+        "3796366",
+        "7202802"
+      ],
+      "prediction_sha256": "a57544c8de2abec95bffcd8fdbbdaefd076e0281a9c7dc3402bfbbb6d541ee9a",
+      "stage": "inner_stack_crossfit",
+      "train_ids": [
+        "712603",
+        "751506",
+        "828588",
+        "828590",
+        "969710",
+        "976363",
+        "977140",
+        "1084416",
+        "1088427",
+        "1088428",
+        "2772705",
+        "3586642"
+      ]
+    },
+    {
+      "cache_key": "49109fbe704af82d831137b05474a5020128c1c833e0dfc5f35c0eb40ed4202b",
+      "dataset": "hill_sensitivity",
+      "method": "aim",
+      "model_seed": 2718,
+      "origin_attempt": 476,
+      "origin_dataset": "primary",
+      "origin_outer_fold": 4,
+      "origin_stage": "inner_stack_crossfit",
+      "outer_fold": 4,
+      "params": {
+        "alpha": 0.1,
+        "feature": "aim"
+      },
+      "predict_ids": [
+        "646525",
+        "647599",
+        "651936",
+        "653862",
+        "655490",
+        "3236830",
+        "3240114",
+        "3241895",
+        "3243128",
+        "3796366",
+        "7202802"
+      ],
+      "prediction_sha256": "0678d21c35f3ab355d2b2d05e85db914e83b7d1c5ebb1a1c407cf25c80406a38",
+      "stage": "inner_stack_crossfit",
+      "train_ids": [
+        "712603",
+        "751506",
+        "828588",
+        "828590",
+        "969710",
+        "976363",
+        "977140",
+        "1084416",
+        "1088427",
+        "1088428",
+        "2772705",
+        "3586642"
+      ]
+    },
+    {
+      "cache_key": "f32572850d5326aeaced2b57a56e5f71f633e867a1056ab2b87827d2ea9a5105",
+      "dataset": "hill_sensitivity",
+      "method": "chem",
+      "model_seed": 2718,
+      "origin_attempt": 477,
+      "origin_dataset": "primary",
+      "origin_outer_fold": 4,
+      "origin_stage": "inner_stack_crossfit",
+      "outer_fold": 4,
+      "params": {
+        "alpha": 0.1,
+        "feature": "chem"
+      },
+      "predict_ids": [
+        "646525",
+        "647599",
+        "651936",
+        "653862",
+        "655490",
+        "3236830",
+        "3240114",
+        "3241895",
+        "3243128",
+        "3796366",
+        "7202802"
+      ],
+      "prediction_sha256": "259562bd80e6e8de800756687833593eec53b7b3405805f979d66629c251f2c7",
+      "stage": "inner_stack_crossfit",
+      "train_ids": [
+        "712603",
+        "751506",
+        "828588",
+        "828590",
+        "969710",
+        "976363",
+        "977140",
+        "1084416",
+        "1088427",
+        "1088428",
+        "2772705",
+        "3586642"
+      ]
+    }
+  ],
+  "execution": {
+    "completed_outer_units": 30,
+    "exact_prediction_cache_reuses": 6,
+    "expected_outer_units": 30,
+    "fit_attempts_started": 1464,
+    "fit_cap": 1500,
+    "fit_failures": 0,
+    "fit_journal_sha256": "88998026f3c2c663101ff4a5eff0eba3e37f0cf6c047ef829b01aa298485d3b0",
+    "fit_successes": 1464,
+    "fit_window_seconds": 135.96399331092834,
+    "planned_requests": 1470,
+    "prediction_sha256": "ed3cc985306c0526d84c5648e8a1b96934939ee9fe74f2cd017e214d29f2083c",
+    "process_exit_code": 0,
+    "process_wall_seconds": 141.71705770492554,
+    "unused_fit_cap": 36,
+    "wall_time_limit_seconds": 14400
+  },
+  "execution_and_scientific_decision_separate": true,
+  "prediction_coverage": {
+    "coverage_annotation_csv_sha256": "6ca6486790a2ae4edce29a6756829423fdc626b669aef2aa80fdd1c6d40750ff",
+    "coverage_annotation_json_sha256": "5668d319b9feb121579c0e65474f8b7e19757315adbb19835593f36906690d83",
+    "coverage_annotation_note": "Use corrected_reason and coverage_class from coverage_annotation.csv for exclusion classification. raw_reason preserves the prediction file value.",
+    "dataset_seed_method_groups": 96,
+    "excluded_identity_ledger": [
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "additive_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "additive_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "aim",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "boltz",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "kernel_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "kernel_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "lowrank_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "lowrank_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "prior_boltz_ridge",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "prior_feature_missing_or_fixed_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "prior_ordinary_readout",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "prior_feature_missing_or_fixed_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "prior_quantum_only",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "prior_feature_missing_or_fixed_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "selected_fusion",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "stack_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "primary",
+        "method": "stack_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "additive_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "additive_chem",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "additive_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "additive_q",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "aim",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "aim",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "boltz",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "boltz",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "chem",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "kernel_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "kernel_chem",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "kernel_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "kernel_q",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "lowrank_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "lowrank_chem",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "lowrank_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "lowrank_q",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "native",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "native",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "prior_boltz_ridge",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "prior_feature_missing_or_fixed_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "prior_boltz_ridge",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "prior_feature_missing_or_fixed_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "prior_ordinary_readout",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "prior_feature_missing_or_fixed_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "prior_ordinary_readout",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "prior_feature_missing_or_fixed_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "prior_quantum_only",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "prior_feature_missing_or_fixed_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "prior_quantum_only",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "prior_feature_missing_or_fixed_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "selected_fusion",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "selected_fusion",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "stack_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "stack_chem",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "corrected_reason": "feature_invalid",
+        "coverage_class": "common_cohort_hold",
+        "dataset": "sensitivity",
+        "method": "stack_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "feature_invalid"
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "corrected_reason": "fixed_hill_sensitivity_exclusion",
+        "coverage_class": "fixed_hill_sensitivity_exclusion",
+        "dataset": "sensitivity",
+        "method": "stack_q",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "raw_reasons": [
+          "fixed_hill_sensitivity_exclusion"
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      }
+    ],
+    "metadata_amendment_receipt_sha256": "ff7cc2d099b5653d89dcae14706ce0e1a8e861e31f5e526c9879456b3c40fbb2",
+    "raw_excluded_identity_ledger": [
+      {
+        "dataset": "primary",
+        "failure_reason": "feature_invalid",
+        "method": "additive_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "feature_invalid",
+        "method": "additive_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "feature_invalid",
+        "method": "aim",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "feature_invalid",
+        "method": "boltz",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "feature_invalid",
+        "method": "chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "feature_invalid",
+        "method": "kernel_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "feature_invalid",
+        "method": "kernel_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "feature_invalid",
+        "method": "lowrank_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "feature_invalid",
+        "method": "lowrank_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "prior_feature_missing_or_fixed_sensitivity_exclusion",
+        "method": "prior_boltz_ridge",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "prior_feature_missing_or_fixed_sensitivity_exclusion",
+        "method": "prior_ordinary_readout",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "prior_feature_missing_or_fixed_sensitivity_exclusion",
+        "method": "prior_quantum_only",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "feature_invalid",
+        "method": "selected_fusion",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "feature_invalid",
+        "method": "stack_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "primary",
+        "failure_reason": "feature_invalid",
+        "method": "stack_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "feature_invalid",
+        "method": "additive_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "additive_chem",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "feature_invalid",
+        "method": "additive_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "additive_q",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "feature_invalid",
+        "method": "aim",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "aim",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "feature_invalid",
+        "method": "boltz",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "boltz",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "feature_invalid",
+        "method": "chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "chem",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "feature_invalid",
+        "method": "kernel_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "kernel_chem",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "feature_invalid",
+        "method": "kernel_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "kernel_q",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "feature_invalid",
+        "method": "lowrank_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "lowrank_chem",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "feature_invalid",
+        "method": "lowrank_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "lowrank_q",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "native",
+        "missing_rows": 15,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "899202",
+          "976329",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "prior_feature_missing_or_fixed_sensitivity_exclusion",
+        "method": "prior_boltz_ridge",
+        "missing_rows": 15,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "899202",
+          "976329",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "prior_feature_missing_or_fixed_sensitivity_exclusion",
+        "method": "prior_ordinary_readout",
+        "missing_rows": 15,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "899202",
+          "976329",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "prior_feature_missing_or_fixed_sensitivity_exclusion",
+        "method": "prior_quantum_only",
+        "missing_rows": 15,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "899202",
+          "976329",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "feature_invalid",
+        "method": "selected_fusion",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "selected_fusion",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "feature_invalid",
+        "method": "stack_chem",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "stack_chem",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "feature_invalid",
+        "method": "stack_q",
+        "missing_rows": 9,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "660560",
+          "3243170",
+          "6375556"
+        ]
+      },
+      {
+        "dataset": "sensitivity",
+        "failure_reason": "fixed_hill_sensitivity_exclusion",
+        "method": "stack_q",
+        "missing_rows": 6,
+        "model_seeds": [
+          1729,
+          2718,
+          31415
+        ],
+        "unique_pubchem_cids": [
+          "899202",
+          "976329"
+        ]
+      }
+    ],
+    "rows": 6240,
+    "rows_per_group_max": 65,
+    "rows_per_group_min": 65,
+    "status_counts_by_dataset_method": {
+      "primary": {
+        "additive_chem": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "additive_q": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "aim": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "boltz": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "chem": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "kernel_chem": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "kernel_q": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "lowrank_chem": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "lowrank_q": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "native": {
+          "expected_rows": 195,
+          "missing_rows": 0,
+          "predicted_rows": 195
+        },
+        "prior_boltz_ridge": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "prior_ordinary_readout": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "prior_quantum_only": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "selected_fusion": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "stack_chem": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        },
+        "stack_q": {
+          "expected_rows": 195,
+          "missing_rows": 9,
+          "predicted_rows": 186
+        }
+      },
+      "sensitivity": {
+        "additive_chem": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "additive_q": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "aim": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "boltz": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "chem": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "kernel_chem": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "kernel_q": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "lowrank_chem": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "lowrank_q": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "native": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "prior_boltz_ridge": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "prior_ordinary_readout": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "prior_quantum_only": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "selected_fusion": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "stack_chem": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        },
+        "stack_q": {
+          "expected_rows": 195,
+          "missing_rows": 15,
+          "predicted_rows": 180
+        }
+      }
+    }
+  },
+  "request_counts_by_dataset_stage_method": [
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "additive_chem",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "additive_q",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "aim",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "boltz",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "chem",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 60,
+      "method": "kernel_chem",
+      "requests": 60,
+      "stage": "inner",
+      "successes": 60
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 60,
+      "method": "kernel_q",
+      "requests": 60,
+      "stage": "inner",
+      "successes": 60
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "lowrank_chem",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "lowrank_q",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "stack_chem",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "stack_q",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 2,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 58,
+      "method": "aim",
+      "requests": 60,
+      "stage": "inner_stack_crossfit",
+      "successes": 58
+    },
+    {
+      "cache_reuses": 2,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 58,
+      "method": "boltz",
+      "requests": 60,
+      "stage": "inner_stack_crossfit",
+      "successes": 58
+    },
+    {
+      "cache_reuses": 2,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 58,
+      "method": "chem",
+      "requests": 60,
+      "stage": "inner_stack_crossfit",
+      "successes": 58
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "additive_chem",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "additive_q",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "aim",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "boltz",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "chem",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "kernel_chem",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "kernel_q",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "lowrank_chem",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "lowrank_q",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "stack_chem",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "hill_sensitivity",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "stack_q",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "additive_chem",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "additive_q",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "aim",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "boltz",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "chem",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 60,
+      "method": "kernel_chem",
+      "requests": 60,
+      "stage": "inner",
+      "successes": 60
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 60,
+      "method": "kernel_q",
+      "requests": 60,
+      "stage": "inner",
+      "successes": 60
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "lowrank_chem",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "lowrank_q",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "stack_chem",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 30,
+      "method": "stack_q",
+      "requests": 30,
+      "stage": "inner",
+      "successes": 30
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 60,
+      "method": "aim",
+      "requests": 60,
+      "stage": "inner_stack_crossfit",
+      "successes": 60
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 60,
+      "method": "boltz",
+      "requests": 60,
+      "stage": "inner_stack_crossfit",
+      "successes": 60
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 60,
+      "method": "chem",
+      "requests": 60,
+      "stage": "inner_stack_crossfit",
+      "successes": 60
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "additive_chem",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "additive_q",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "aim",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "boltz",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "chem",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "kernel_chem",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "kernel_q",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "lowrank_chem",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "lowrank_q",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "stack_chem",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    },
+    {
+      "cache_reuses": 0,
+      "dataset": "primary",
+      "failures": 0,
+      "fit_attempts": 15,
+      "method": "stack_q",
+      "requests": 15,
+      "stage": "outer",
+      "successes": 15
+    }
+  ],
+  "scientific_decision_status": "Not evaluated in this accounting file. The post-run decision report is a separate artifact.",
+  "status": "COMPLETE"
+}

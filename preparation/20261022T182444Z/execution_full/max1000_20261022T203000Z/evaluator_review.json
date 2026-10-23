@@ -1,0 +1,17 @@
+{
+  "status": "INDEPENDENT_EVALUATION_PASS_NO_PROMOTION",
+  "evaluator_sha256": "e2e858d9d410182cee612fe359ff8573cec6a42ab966e0f2d8e50359ed8874b0",
+  "fit_status": "PASS",
+  "fit_count": 1500,
+  "fit_cap": 1500,
+  "metrics_rows_checked": 66,
+  "bootstrap_rows_checked": 129,
+  "prediction_status_rows": 4290,
+  "outer_fit_manifest_rows": 300,
+  "raw_bootstrap_sha256": "7a93b1feca539865164bcfeb62695ba88f0ec366e5cf41fa8dae49ec4aca8be2",
+  "corrected_bootstrap_sha256": "435081588535d13dd0e4255884640603bd4691d10dee7c79766d3c779fd61745",
+  "numeric_reconciliation_errors": 0,
+  "result": "NO_PROMOTION",
+  "models_refit": 0,
+  "note": "Raw bootstrap file remains unchanged. Model seed repair used frozen runner loop order and was checked by independent recomputation."
+}

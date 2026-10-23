@@ -1,0 +1,397 @@
+{
+  "status": "COMPLETE",
+  "software_execution": "PASS",
+  "scientific_decision": "NO_PROMOTION",
+  "added_quantum_claim_allowed": false,
+  "scope": "KLK5 development only",
+  "created_utc": "2026-10-22T23:53:07.5262232Z",
+  "subagent_model": "gpt-6-luna",
+  "subagent_reasoning": "medium",
+  "new_encoder_calls": 0,
+  "gpu_vm_started": false,
+  "planned_estimator_requests": 1470,
+  "attempted_fits": 1464,
+  "successful_fits": 1464,
+  "failed_fits": 0,
+  "exact_cache_reuses": 6,
+  "fit_cap": 1500,
+  "fit_window_seconds": 135.96399331092834,
+  "process_wall_seconds": 141.71705770492554,
+  "wall_limit_seconds": 14400,
+  "outer_units_completed": 30,
+  "model_seeds": [
+    1729,
+    2718,
+    31415
+  ],
+  "bootstrap_seed": 1729,
+  "bootstrap_resamples": 5000,
+  "source_records": 65,
+  "primary_records": 62,
+  "primary_pairs": 136,
+  "sensitivity_records": 60,
+  "sensitivity_pairs": 129,
+  "groups_with_pairs": 8,
+  "prediction_rows": 6240,
+  "metric_rows_reconciled": 102,
+  "bootstrap_rows_reconciled": 210,
+  "numeric_tolerance": 1E-08,
+  "numeric_mismatches": 0,
+  "coverage_annotation": "classical/coverage_annotation.csv",
+  "raw_prediction_sha256": "ed3cc985306c0526d84c5648e8a1b96934939ee9fe74f2cd017e214d29f2083c",
+  "feature_sha256": "ee7f4c5e74f9bb3b1950c98395249948f0910348858fea0df3f4384e195fbd34",
+  "report_repair": "Default feature path only; no fits or predictions changed",
+  "coverage_repair": "Sidecar corrects exclusion reasons; raw predictions remain unchanged",
+  "recommendation": "Reject promotion. Stop atom-level fusion expansion. Keep reserved targets unscored.",
+  "candidate_metrics": [
+    {
+      "dataset": "primary",
+      "method": "additive_chem",
+      "macro_group_pair_mae": 0.6162317633761163,
+      "spearman_rho": -0.05159779406209866,
+      "seed_range": [
+        0.6162317633761163,
+        0.6162317633761163
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "additive_q",
+      "macro_group_pair_mae": 0.6463227140829259,
+      "spearman_rho": -0.2141723955579059,
+      "seed_range": [
+        0.6463227140829259,
+        0.6463227140829259
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "aim",
+      "macro_group_pair_mae": 0.6271848898888749,
+      "spearman_rho": -0.2800987132028909,
+      "seed_range": [
+        0.6271848898888749,
+        0.6271848898888749
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "boltz",
+      "macro_group_pair_mae": 0.6574302038227134,
+      "spearman_rho": -0.15232555211402385,
+      "seed_range": [
+        0.6574302038227134,
+        0.6574302038227134
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "chem",
+      "macro_group_pair_mae": 0.599402087722152,
+      "spearman_rho": 0.020674372340157638,
+      "seed_range": [
+        0.599402087722152,
+        0.599402087722152
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "kernel_chem",
+      "macro_group_pair_mae": 0.6544161040870348,
+      "spearman_rho": -0.15469265442824406,
+      "seed_range": [
+        0.6544161040870348,
+        0.6544161040870348
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "kernel_q",
+      "macro_group_pair_mae": 0.6376343304665355,
+      "spearman_rho": -0.2502329329404951,
+      "seed_range": [
+        0.6376343304665355,
+        0.6376343304665355
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "lowrank_chem",
+      "macro_group_pair_mae": 0.6674713621298712,
+      "spearman_rho": -0.21497821762232128,
+      "seed_range": [
+        0.6674713621298712,
+        0.6674713621298712
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "lowrank_q",
+      "macro_group_pair_mae": 0.6399608565471168,
+      "spearman_rho": -0.06645513837475762,
+      "seed_range": [
+        0.6399608565471168,
+        0.6399608565471168
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "matched_selected_chem",
+      "macro_group_pair_mae": 0.6828873930316579,
+      "spearman_rho": -0.17777609898181024,
+      "seed_range": [
+        0.6489017593312563,
+        0.6998802098818588
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "native",
+      "macro_group_pair_mae": 0.7761879821036977,
+      "spearman_rho": 0.3113243181989877,
+      "seed_range": [
+        0.7761879821036977,
+        0.7761879821036977
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "prior_boltz_ridge",
+      "macro_group_pair_mae": 0.7479847252345091,
+      "spearman_rho": 0.2967691571604845,
+      "seed_range": [
+        0.7479847252345091,
+        0.7479847252345091
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "prior_ordinary_readout",
+      "macro_group_pair_mae": 0.6916031616681672,
+      "spearman_rho": 0.10165948981390545,
+      "seed_range": [
+        0.6916031616681672,
+        0.6916031616681672
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "prior_quantum_only",
+      "macro_group_pair_mae": 0.6089739763672183,
+      "spearman_rho": -0.05589551173898081,
+      "seed_range": [
+        0.5886125419650494,
+        0.6248264232078127
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "selected_fusion",
+      "macro_group_pair_mae": 0.6556709283565372,
+      "spearman_rho": -0.16476543023343657,
+      "seed_range": [
+        0.6412200272003483,
+        0.6628963789346316
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "stack_chem",
+      "macro_group_pair_mae": 0.6207011457372917,
+      "spearman_rho": -0.07093752360806829,
+      "seed_range": [
+        0.6207011457372917,
+        0.6207011457372917
+      ]
+    },
+    {
+      "dataset": "primary",
+      "method": "stack_q",
+      "macro_group_pair_mae": 0.6222098953824964,
+      "spearman_rho": 0.08468686258215609,
+      "seed_range": [
+        0.6222098953824964,
+        0.6222098953824964
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "additive_chem",
+      "macro_group_pair_mae": 0.626751853380527,
+      "spearman_rho": -0.11269797165879412,
+      "seed_range": [
+        0.626751853380527,
+        0.626751853380527
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "additive_q",
+      "macro_group_pair_mae": 0.64434750833256,
+      "spearman_rho": -0.2121700472353432,
+      "seed_range": [
+        0.64434750833256,
+        0.64434750833256
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "aim",
+      "macro_group_pair_mae": 0.6249828693160124,
+      "spearman_rho": -0.2991942206168381,
+      "seed_range": [
+        0.6249828693160124,
+        0.6249828693160124
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "boltz",
+      "macro_group_pair_mae": 0.6590797806595556,
+      "spearman_rho": -0.22817449291469857,
+      "seed_range": [
+        0.6590797806595556,
+        0.6590797806595556
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "chem",
+      "macro_group_pair_mae": 0.610852214863266,
+      "spearman_rho": -0.04173381494859685,
+      "seed_range": [
+        0.610852214863266,
+        0.610852214863266
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "kernel_chem",
+      "macro_group_pair_mae": 0.6507581358341048,
+      "spearman_rho": -0.191108641289247,
+      "seed_range": [
+        0.6507581358341048,
+        0.6507581358341048
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "kernel_q",
+      "macro_group_pair_mae": 0.6334506658745677,
+      "spearman_rho": -0.20694637399277582,
+      "seed_range": [
+        0.6334506658745677,
+        0.6334506658745677
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "lowrank_chem",
+      "macro_group_pair_mae": 0.6610605833265496,
+      "spearman_rho": -0.3149763823284246,
+      "seed_range": [
+        0.6610605833265496,
+        0.6610605833265496
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "lowrank_q",
+      "macro_group_pair_mae": 0.6450469045362843,
+      "spearman_rho": 0.034787440955821064,
+      "seed_range": [
+        0.6450469045362843,
+        0.6450469045362843
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "matched_selected_chem",
+      "macro_group_pair_mae": 0.6482840930197847,
+      "spearman_rho": -0.1828470871538391,
+      "seed_range": [
+        0.6281327787280997,
+        0.6783607846236143
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "native",
+      "macro_group_pair_mae": 0.7791125383046235,
+      "spearman_rho": 0.3014726312864685,
+      "seed_range": [
+        0.7791125383046235,
+        0.7791125383046235
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "prior_boltz_ridge",
+      "macro_group_pair_mae": 0.7483604071180588,
+      "spearman_rho": 0.26479577660461245,
+      "seed_range": [
+        0.748360407118059,
+        0.748360407118059
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "prior_ordinary_readout",
+      "macro_group_pair_mae": 0.6955939449823805,
+      "spearman_rho": 0.08741317032509033,
+      "seed_range": [
+        0.6955939449823805,
+        0.6955939449823805
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "prior_quantum_only",
+      "macro_group_pair_mae": 0.6145302762364674,
+      "spearman_rho": -0.10738168009632305,
+      "seed_range": [
+        0.5904524757077023,
+        0.6276401425343572
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "selected_fusion",
+      "macro_group_pair_mae": 0.6480686006230344,
+      "spearman_rho": -0.18271742150597392,
+      "seed_range": [
+        0.6248997318820662,
+        0.6751277377775807
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "stack_chem",
+      "macro_group_pair_mae": 0.6070935174022768,
+      "spearman_rho": -0.011114198388441236,
+      "seed_range": [
+        0.6070935174022768,
+        0.6070935174022768
+      ]
+    },
+    {
+      "dataset": "sensitivity",
+      "method": "stack_q",
+      "macro_group_pair_mae": 0.6087567959475213,
+      "spearman_rho": 0.0828007779938872,
+      "seed_range": [
+        0.6087567959475213,
+        0.6087567959475213
+      ]
+    }
+  ],
+  "artifacts": {
+    "lead_report": "RESULTS.md",
+    "frozen_plan": "FROZEN_PLAN.md",
+    "fit_accounting": "classical/complete_attempt_accounting.json",
+    "decision_report": "interaction/postrun/decision_report.json",
+    "independent_audit": "audit/independent_audit.json",
+    "numeric_reconciliation": "audit/numeric_reconciliation.json",
+    "output_hashes": "output_hash_manifest.json"
+  }
+}

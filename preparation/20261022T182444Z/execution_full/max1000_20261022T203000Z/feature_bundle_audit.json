@@ -1,0 +1,93 @@
+{
+  "audit_version": 1,
+  "created_utc": "2026-10-22",
+  "scope": "Independent read-only audit of the frozen AIM feature bundle and extraction outputs. No model calls or fits were run.",
+  "verdict": "PASS_FEATURE_BUNDLE",
+  "bundle": {
+    "npz": "aim_features.npz",
+    "npz_sha256": "ee7f4c5e74f9bb3b1950c98395249948f0910348858fea0df3f4384e195fbd34",
+    "schema": "aim_features.schema.json",
+    "schema_sha256": "7ca819d8679e41273b112682ff97be79dac49c0fea09be1eadce2a65224defe5",
+    "failure_ledger": "bundle_failure_ledger.csv",
+    "failure_ledger_sha256": "4bec4ae689b7b43aba9a7074af07658fe603bc3717575557eb462d897303da56",
+    "freeze_receipt": "feature_bundle_freeze_receipt.json",
+    "freeze_receipt_sha256": "25320455c983d9fb67fd2d83f46a851042c2ca4491e9cc5daabc009ce5a9c5e5",
+    "rows": 65,
+    "valid_rows": 62,
+    "coverage": "62/65 = 95.38 percent",
+    "invalid_rows": [
+      "660560",
+      "3243170",
+      "6375556"
+    ],
+    "invalid_reason": "Frozen source-stereo holds. The rows remain in the bundle and ledger."
+  },
+  "arrays": {
+    "cids": "(65,), same order as frozen records.csv",
+    "boltz_atoms": "(65,31,128)",
+    "aim_atoms": "(65,31,256)",
+    "aim_atoms_free": "(65,31,256)",
+    "global_boltz": "(65,768)",
+    "atom_mask": "(65,31)",
+    "allowed": "(65,31,31)",
+    "simple_scalars": "(65,18)",
+    "aim_scalars": "(65,19)",
+    "aim_scalars_free": "(65,19)",
+    "feature_valid": "(65,)"
+  },
+  "checks": {
+    "row_order_matches_frozen_records": true,
+    "valid_count_matches_ledger": true,
+    "held_ids_match_ledger": true,
+    "all_valid_atom_mask_features_finite": true,
+    "padded_atom_values_are_nan": true,
+    "valid_scalar_rows_finite": true,
+    "held_aim_and_scalar_rows_are_nan": true,
+    "all_124_state_outputs_have_pass_receipts": true,
+    "all_124_state_input_hashes_match_prepared_manifests": true,
+    "all_124_state_output_hashes_match_receipts": true,
+    "all_124_state_features_energies_charges_and_forces_finite": true,
+    "all_124_state_atom_maps_and_coordinates_match_manifests": true,
+    "completion_receipt_errors": [],
+    "extraction_calls": 124,
+    "extraction_successes": 124,
+    "extraction_failures": 0,
+    "extraction_call_cap": 130,
+    "v3_amendment_sha256": "0d455b3b46f02ddf6ec7246c3f0f32d633c92b9d6d59643844b39bfad5512712",
+    "original_extractor_used": true,
+    "dense_padding_adapter_used": false
+  },
+  "coverage_pairs": {
+    "primary": {
+      "rows": 62,
+      "within_group_pairs": 136,
+      "pairs_by_fold": {
+        "0": 36,
+        "1": 29,
+        "2": 28,
+        "3": 22,
+        "4": 21
+      }
+    },
+    "hill_sensitivity": {
+      "rows": 60,
+      "excluded_cids": [
+        "899202",
+        "976329"
+      ],
+      "within_group_pairs": 129,
+      "pairs_by_fold": {
+        "0": 36,
+        "1": 29,
+        "2": 21,
+        "3": 22,
+        "4": 21
+      }
+    },
+    "all_folds_have_pairs": true,
+    "feature_coverage_minimum_rows": 59,
+    "sensitivity_minimum_pre_sensitivity_rows": 61
+  },
+  "scientific_limit": "CID 1312679 has a finite AIM output at neutral total charge. Its charge-separated nitro atom states remain outside verified model-domain support. The result does not validate chemical accuracy.",
+  "fit_state": "No fit was present in the feature freeze receipt. Downstream evaluation remains pending."
+}

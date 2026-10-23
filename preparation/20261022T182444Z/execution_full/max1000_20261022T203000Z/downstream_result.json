@@ -1,0 +1,372 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "preliminary_checker_receipt": {
+    "path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\reconciliation_failure.json",
+    "status": "RECONCILIATION_CHECKER_EXPECTATION_ERROR",
+    "classification": "checker expectation error; model outputs unaffected"
+  },
+  "run": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01",
+  "execution": {
+    "process_receipt": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_process_retry01\\process_receipt.json",
+    "status": "PASS",
+    "exit_code": 0,
+    "timeout": false,
+    "elapsed_seconds": 910.8910000000033,
+    "maximum_seconds": 14400.0,
+    "pid": 37764
+  },
+  "fit_accounting": {
+    "initial_guard_failure_fit_count": 0,
+    "successful_run_fit_count": 1500,
+    "fit_cap": 1500,
+    "primary_nested": 735,
+    "fixed_hill_sensitivity_nested": 735,
+    "primary_controls": 30,
+    "total_fits": 1500,
+    "device": "cpu",
+    "torch_intraop_threads": 1,
+    "torch_interop_threads": 1,
+    "blas_environment": {
+      "OMP_NUM_THREADS": 1,
+      "MKL_NUM_THREADS": 1,
+      "OPENBLAS_NUM_THREADS": 1,
+      "NUMEXPR_NUM_THREADS": 1,
+      "VECLIB_MAXIMUM_THREADS": 1
+    }
+  },
+  "design": {
+    "datasets": [
+      "primary",
+      "hill_sensitivity"
+    ],
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "outer_folds": 5,
+    "inner_folds": 2,
+    "label": "log10(IC50 micromolar)",
+    "score_orientation": "lower is stronger",
+    "coverage": {
+      "primary": {
+        "valid_records": 62,
+        "denominator": 65,
+        "common_records": 62,
+        "common_pairs": 136
+      },
+      "hill_sensitivity": {
+        "valid_records_after_fixed_exclusions": 60,
+        "denominator": 65,
+        "common_records": 60,
+        "common_pairs": 129,
+        "fixed_exclusions": [
+          "899202",
+          "976329"
+        ]
+      },
+      "stereo_holds": [
+        "3243170",
+        "6375556",
+        "660560"
+      ]
+    },
+    "coverage_pair_counts_by_outer_fold": {
+      "primary": {
+        "0": 36,
+        "1": 29,
+        "2": 28,
+        "3": 22,
+        "4": 21
+      },
+      "hill_sensitivity": {
+        "0": 36,
+        "1": 29,
+        "2": 21,
+        "3": 22,
+        "4": 21
+      }
+    },
+    "limitations": [
+      "KLK5 is development-only; training overlap is unresolved.",
+      "This baseline adapts final readout layers only.",
+      "It is not published full affinity-head adaptation."
+    ]
+  },
+  "output_counts": {
+    "predictions": {
+      "rows": 4290,
+      "predicted": 4050,
+      "missing": 240
+    },
+    "metrics": 66,
+    "bootstrap_raw": 129,
+    "bootstrap_corrected": 129,
+    "outer_fit_manifest": 300,
+    "common_identities": 390
+  },
+  "common_identity_audit": "PASS for all 6 dataset/seed cohorts; primary native predictions retain all 65 rows and Hill native retains 63, but shared metric sets are 62 and 60. Missing rows match held-feature and fixed-Hill exclusions.",
+  "bootstrap_reporting": {
+    "raw_bootstrap_preserved": true,
+    "raw_sha256": "7a93b1feca539865164bcfeb62695ba88f0ec366e5cf41fa8dae49ec4aca8be2",
+    "corrected_csv": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\bootstrap_corrected.csv",
+    "corrected_sha256": "435081588535d13dd0e4255884640603bd4691d10dee7c79766d3c779fd61745",
+    "repair_receipt": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\bootstrap_seed_repair_receipt.json",
+    "repair_receipt_sha256": "c59dc6f406d70003d2285efae3479c5434682784232712e8bbf5c80bc7736a39",
+    "independent_recomputation": "PASS; 129 numeric CI rows matched from fixed OOF predictions",
+    "promotion_overall_status": "NO_PROMOTION",
+    "promotion_evaluation": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\promotion_evaluation.json",
+    "results_markdown": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\RESULTS.md"
+  },
+  "macro_group_pair_mae_by_method_and_seed": {
+    "primary": {
+      "atom_attention": {
+        "by_seed": {
+          "1729": 0.8599391104412653,
+          "2718": 0.7347132590250202,
+          "31415": 0.8031966027056584
+        },
+        "mean_over_three_seeds": 0.7992829907239813
+      },
+      "atom_attention_free": {
+        "by_seed": {
+          "1729": 0.8578060403676278,
+          "2718": 0.7262458390286213,
+          "31415": 0.8012693729130681
+        },
+        "mean_over_three_seeds": 0.7951070841031057
+      },
+      "atom_attention_shuffle": {
+        "by_seed": {
+          "1729": 0.8591890145658045,
+          "2718": 0.7351108253377963,
+          "31415": 0.802776859439811
+        },
+        "mean_over_three_seeds": 0.799025566447804
+      },
+      "atom_concat": {
+        "by_seed": {
+          "1729": 0.7674495239903181,
+          "2718": 0.8794450853018516,
+          "31415": 0.7482425387668403
+        },
+        "mean_over_three_seeds": 0.7983790493530033
+      },
+      "boltz_atom_capacity": {
+        "by_seed": {
+          "1729": 0.6754363725042656,
+          "2718": 0.7021555331077081,
+          "31415": 0.8226194728388191
+        },
+        "mean_over_three_seeds": 0.7334037928169309
+      },
+      "boltz_ridge": {
+        "by_seed": {
+          "1729": 0.7479847252345091,
+          "2718": 0.7479847252345091,
+          "31415": 0.7479847252345091
+        },
+        "mean_over_three_seeds": 0.7479847252345091
+      },
+      "native": {
+        "by_seed": {
+          "1729": 0.7761879821036977,
+          "2718": 0.7761879821036977,
+          "31415": 0.7761879821036977
+        },
+        "mean_over_three_seeds": 0.7761879821036977
+      },
+      "ordinary_readout": {
+        "by_seed": {
+          "1729": 0.6916031616681672,
+          "2718": 0.6916031616681672,
+          "31415": 0.6916031616681672
+        },
+        "mean_over_three_seeds": 0.6916031616681672
+      },
+      "pooled_fusion": {
+        "by_seed": {
+          "1729": 0.7335544954450963,
+          "2718": 0.8028813717245209,
+          "31415": 0.7467927841320015
+        },
+        "mean_over_three_seeds": 0.7610762171005395
+      },
+      "quantum_only": {
+        "by_seed": {
+          "1729": 0.6134829639287929,
+          "2718": 0.5886125419650494,
+          "31415": 0.6248264232078127
+        },
+        "mean_over_three_seeds": 0.6089739763672183
+      },
+      "quantum_scalars": {
+        "by_seed": {
+          "1729": 0.8955573927423705,
+          "2718": 0.9324880542180841,
+          "31415": 0.8173044434782499
+        },
+        "mean_over_three_seeds": 0.8817832968129015
+      },
+      "simple_scalars": {
+        "by_seed": {
+          "1729": 0.9318677286209498,
+          "2718": 0.7805382507263092,
+          "31415": 0.9032301411132999
+        },
+        "mean_over_three_seeds": 0.8718787068201864
+      }
+    },
+    "hill_sensitivity": {
+      "atom_attention": {
+        "by_seed": {
+          "1729": 0.8363610584894662,
+          "2718": 0.707638691912361,
+          "31415": 0.8026493426945662
+        },
+        "mean_over_three_seeds": 0.7822163643654645
+      },
+      "atom_concat": {
+        "by_seed": {
+          "1729": 0.7670355976222707,
+          "2718": 0.8576715489110722,
+          "31415": 0.7130750267974064
+        },
+        "mean_over_three_seeds": 0.7792607244435832
+      },
+      "boltz_atom_capacity": {
+        "by_seed": {
+          "1729": 0.6822481526728057,
+          "2718": 0.7299548764117874,
+          "31415": 0.8293342811034383
+        },
+        "mean_over_three_seeds": 0.7471791033960105
+      },
+      "boltz_ridge": {
+        "by_seed": {
+          "1729": 0.748360407118059,
+          "2718": 0.748360407118059,
+          "31415": 0.748360407118059
+        },
+        "mean_over_three_seeds": 0.7483604071180588
+      },
+      "native": {
+        "by_seed": {
+          "1729": 0.7791125383046235,
+          "2718": 0.7791125383046235,
+          "31415": 0.7791125383046235
+        },
+        "mean_over_three_seeds": 0.7791125383046235
+      },
+      "ordinary_readout": {
+        "by_seed": {
+          "1729": 0.6955939449823805,
+          "2718": 0.6955939449823805,
+          "31415": 0.6955939449823805
+        },
+        "mean_over_three_seeds": 0.6955939449823805
+      },
+      "pooled_fusion": {
+        "by_seed": {
+          "1729": 0.7263210894353596,
+          "2718": 0.8028097464528248,
+          "31415": 0.7462557144114385
+        },
+        "mean_over_three_seeds": 0.7584621834332076
+      },
+      "quantum_only": {
+        "by_seed": {
+          "1729": 0.6276401425343572,
+          "2718": 0.5904524757077023,
+          "31415": 0.6254982104673429
+        },
+        "mean_over_three_seeds": 0.6145302762364674
+      },
+      "quantum_scalars": {
+        "by_seed": {
+          "1729": 0.8992793887136191,
+          "2718": 0.9285462078229517,
+          "31415": 0.8130910749565009
+        },
+        "mean_over_three_seeds": 0.8803055571643572
+      },
+      "simple_scalars": {
+        "by_seed": {
+          "1729": 0.9799736195321146,
+          "2718": 0.774955901854457,
+          "31415": 0.9649550375662124
+        },
+        "mean_over_three_seeds": 0.9066281863175947
+      }
+    }
+  },
+  "inputs": {
+    "feature_npz_sha256": "ee7f4c5e74f9bb3b1950c98395249948f0910348858fea0df3f4384e195fbd34",
+    "feature_schema_sha256": "7ca819d8679e41273b112682ff97be79dac49c0fea09be1eadce2a65224defe5",
+    "protocol_amendment_v3_sha256": "0d455b3b46f02ddf6ec7246c3f0f32d633c92b9d6d59643844b39bfad5512712",
+    "fit_gate_sha256": "d4ff017308bf3d8f13b196bea4f63753789af081e182f86cb55739e291aa53d1",
+    "original_fit_entrypoint_sha256": "49db8f7d8bd47d60872b3b97db811cce375416eccaa2f53c2f34527b973fdea1",
+    "guarded_fit_entrypoint_sha256": "9df9f7071310d3fc15e5a06eb04a681e223925485a02188e6f9e959a59947482",
+    "guarded_protocol_support_sha256": "a8eb0f8ba6abd0ea78f823d17c9f87abfb5cf22d9d11ac9a978b27def8459e40",
+    "loader_import_receipt_sha256": "af0a2d081207c44fe5a75705a8584b651b1b516247ed48c04847165d1233b59e"
+  },
+  "outputs": {
+    "predictions.csv": {
+      "path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\predictions.csv",
+      "sha256": "61727734edf75ec208284f0856a21a738d343bbe5b40a8f22ad980c52ef75eb3",
+      "rows": 4290
+    },
+    "metrics.csv": {
+      "path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\metrics.csv",
+      "sha256": "2bad0f3791d4d8a690a85faa00b9a7ec57f3f1ac50f5ae21640dd03c7980ddd4",
+      "rows": 66
+    },
+    "bootstrap.csv": {
+      "path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\bootstrap.csv",
+      "sha256": "7a93b1feca539865164bcfeb62695ba88f0ec366e5cf41fa8dae49ec4aca8be2",
+      "rows": 129
+    },
+    "bootstrap_corrected.csv": {
+      "path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\bootstrap_corrected.csv",
+      "sha256": "435081588535d13dd0e4255884640603bd4691d10dee7c79766d3c779fd61745",
+      "rows": 129
+    },
+    "bootstrap_seed_repair_receipt.json": {
+      "path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\bootstrap_seed_repair_receipt.json",
+      "sha256": "c59dc6f406d70003d2285efae3479c5434682784232712e8bbf5c80bc7736a39",
+      "rows": null
+    },
+    "outer_fit_manifest.csv": {
+      "path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\outer_fit_manifest.csv",
+      "sha256": "ed5fc30022a670fde2677149c2f4ff3eb9704c5616b62c7a30170bab0a4b3dd6",
+      "rows": 300
+    },
+    "common_identities.csv": {
+      "path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\common_identities.csv",
+      "sha256": "b740b864d56910025fbfcb3251fe0a6625da5f85ec5342e3464e4ddcad614db3",
+      "rows": 390
+    },
+    "fit_manifest.json": {
+      "path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\fit_manifest.json",
+      "sha256": "8137faf1c8c71dccc5803497a2e27fda61d4919ff2a4f21dcfc6f4e7b95e0980",
+      "rows": null
+    },
+    "feature_coverage.csv": {
+      "path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\feature_coverage.csv",
+      "sha256": "f3e1ab761454e170176c6dfd6776317fdc7cc52491710232fac836ee530e8ecb",
+      "rows": 65
+    }
+  },
+  "output_hash_manifest": {
+    "path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01_output_hash_manifest.json",
+    "sha256": "ee0f1b6cc3bb936b2625e3ef1c36a3845f06ec46dcebfb3eb9e483c02fd1d016",
+    "file_count": 616
+  },
+  "source_integrity": {
+    "records.csv": "b6c9473de5dd8d09af35f5b5e42983498ee468a15e96c19b0ba066c3cc20791c",
+    "splits.csv": "137c76616c1940cdddabd021bb6d5d1f9b1ead0a78dddd450de73ac88dbb0888",
+    "exact_inputs.npz": "5dcbd0011ed01995fe76a71c12f62073be5a7905c7cb6e16e9cee7402fea1540"
+  },
+  "validation_errors": []
+}

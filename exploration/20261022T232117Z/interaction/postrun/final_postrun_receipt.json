@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "successful_attempt": "attempt_02",
+  "failed_attempt_receipt": "exploration/20261022T232117Z/interaction/postrun/postrun_repair01/failed_attempt_process_receipt.json (preserved)",
+  "successful_process_receipt": "exploration/20261022T232117Z/interaction/postrun/process_receipt_retry01.json",
+  "repair_receipt": "exploration/20261022T232117Z/interaction/postrun/postrun_repair01/repair_receipt.json",
+  "report_status": "complete",
+  "metric_row_count": 102,
+  "bootstrap_row_count": 210,
+  "bootstrap_expected_rows": 210,
+  "script_sha256": "c0646a0ce874814b654aa1763e959154a33835573c973c411dabb234f19c56a6",
+  "prediction_sha256": "ed3cc985306c0526d84c5648e8a1b96934939ee9fe74f2cd017e214d29f2083c",
+  "frozen_plan_sha256": "530a7ff532fbc56b5291e9a73e4ffb0a40689a0623fced5172656f897d1d502c",
+  "source_and_output_sha256": {
+    "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\exploration\\20261022T232117Z\\interaction\\postrun\\attempt_02\\stdout.log": "5760c50af814bd87e57f3f0eecc7fba658d65296c7ce9c74083dbf19d3264dd6",
+    "exploration/20261022T232117Z/interaction/postrun/paired_bootstrap.csv": "ca94b151cb153e7dd484172134f3c201388ad41c0abded4a0433ca44930fedd0",
+    "exploration/20261022T232117Z/interaction/postrun_decision.py": "c0646a0ce874814b654aa1763e959154a33835573c973c411dabb234f19c56a6",
+    "exploration/20261022T232117Z/classical/predictions.csv": "ed3cc985306c0526d84c5648e8a1b96934939ee9fe74f2cd017e214d29f2083c",
+    "exploration/20261022T232117Z/FROZEN_PLAN.md": "530a7ff532fbc56b5291e9a73e4ffb0a40689a0623fced5172656f897d1d502c",
+    "exploration/20261022T232117Z/interaction/postrun/decision_report.md": "ac34497796af479bce10eef07cc55c175af4385a444be4004a7fd334b48a273e",
+    "exploration/20261022T232117Z/interaction/postrun/decision_report.json": "49292d4df3470b5d4650fdab01c567829388f75ee9479a109ec7547b774ad7fb",
+    "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\exploration\\20261022T232117Z\\interaction\\postrun\\attempt_02\\stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "estimator_fits": 0,
+  "predictions_unchanged": true,
+  "frozen_rules_unchanged": true,
+  "gate_unchanged": true,
+  "transform_receipt_unchanged": true,
+  "failed_attempt_exit_code": 1
+}

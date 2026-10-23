@@ -1,0 +1,30 @@
+--- C:\Users\Saxen\OneDrive\Documents\qcfm\preparation\20261022T182444Z\arm4_protocol\protocol_support.py
++++ C:\Users\Saxen\OneDrive\Documents\qcfm\preparation\20261022T182444Z\execution\guarded_fit_20261022\protocol_support.py
+@@ -5,7 +5,7 @@
+ from typing import Mapping, Sequence
+ import numpy as np
+ 
+-ROOT = Path(__file__).resolve().parent
++ROOT = Path(r"C:\Users\Saxen\OneDrive\Documents\qcfm\preparation\20261022T182444Z\arm4_protocol")
+ SOURCE = Path(r"C:\Users\Saxen\ppi_IG\results\representation_diagnosis\20261015\attempt02\gcp_a100_retry_01\collected")
+ EXPECTED = {
+     "records.csv": "b6c9473de5dd8d09af35f5b5e42983498ee468a15e96c19b0ba066c3cc20791c",
+@@ -185,7 +185,17 @@
+         raise ValueError("Atom mask shape does not match atom features")
+     if out["allowed"].shape != (n, out["atom_mask"].shape[1], out["atom_mask"].shape[1]):
+         raise ValueError("Graph mask shape does not match atom features")
+-    for key in ("boltz_atoms", "aim_atoms", "aim_atoms_free", "global_boltz", "simple_scalars", "aim_scalars", "aim_scalars_free"):
++    mask = out["atom_mask"]
++    if mask.dtype != np.bool_ or mask.shape != (n, out["boltz_atoms"].shape[1]):
++        raise ValueError("Atom mask must be boolean and match all 65 rows")
++    if np.any(mask[:, 1:] & ~mask[:, :-1]):
++        raise ValueError("Active atom rows must precede padded rows")
++    for key in ("boltz_atoms", "aim_atoms", "aim_atoms_free"):
++        if not np.isfinite(out[key][valid][mask[valid]]).all():
++            raise ValueError(f"Valid active atoms contain non-finite values: {key}")
++        if not np.isnan(out[key][~mask]).all():
++            raise ValueError(f"Masked atom slots must contain NaN padding: {key}")
++    for key in ("global_boltz", "simple_scalars", "aim_scalars", "aim_scalars_free"):
+         if not np.isfinite(out[key][valid]).all():
+             raise ValueError(f"Valid rows contain non-finite values: {key}")
+     return out

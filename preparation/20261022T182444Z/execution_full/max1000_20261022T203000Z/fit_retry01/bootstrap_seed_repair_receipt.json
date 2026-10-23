@@ -1,0 +1,1186 @@
+{
+  "status": "REPAIRED_MODEL_SEED_LABELS_FROM_FROZEN_RUNNER_ROW_ORDER",
+  "raw_file": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\bootstrap.csv",
+  "raw_sha256": "7a93b1feca539865164bcfeb62695ba88f0ec366e5cf41fa8dae49ec4aca8be2",
+  "corrected_file": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\preparation\\20261022T182444Z\\execution_full\\max1000_20261022T203000Z\\fit_retry01\\bootstrap_corrected.csv",
+  "corrected_sha256": "435081588535d13dd0e4255884640603bd4691d10dee7c79766d3c779fd61745",
+  "raw_header": [
+    "dataset",
+    "seed",
+    "candidate",
+    "comparator",
+    "groups",
+    "mean_reduction",
+    "ci95_low",
+    "ci95_high",
+    "n_resamples",
+    "seed",
+    "limit"
+  ],
+  "bug": "The runner expanded CI fields after the model seed. The CI seed value overwrote the model seed in the row dictionary. The CSV also contains duplicate seed headers.",
+  "repair_basis": "Frozen runner loop order: primary then hill_sensitivity; within each dataset, seeds 1729, 2718, 31415. Each primary seed block has 27 rows. Each sensitivity seed block has 16 rows. Candidate/comparator sequence matched across all seed blocks.",
+  "row_count": 129,
+  "row_mapping": [
+    {
+      "source_csv_line": 2,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "boltz_ridge",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 3,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "ordinary_readout",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 4,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "boltz_atom_capacity",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 5,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "boltz_atom_capacity",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 6,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "simple_scalars",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 7,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "simple_scalars",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 8,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "quantum_scalars",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 9,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "quantum_scalars",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 10,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "pooled_fusion",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 11,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "pooled_fusion",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 12,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_concat",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 13,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_concat",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 14,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 15,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 16,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "quantum_only",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 17,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "quantum_only",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 18,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention_free",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 19,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention_free",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 20,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention_shuffle",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 21,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention_shuffle",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 22,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention",
+      "comparator": "pooled_fusion",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 23,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention",
+      "comparator": "atom_concat",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 24,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention",
+      "comparator": "boltz_atom_capacity",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 25,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention",
+      "comparator": "simple_scalars",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 26,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention",
+      "comparator": "quantum_scalars",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 27,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention_free",
+      "comparator": "atom_attention",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 28,
+      "dataset": "primary",
+      "model_seed": "1729",
+      "candidate": "atom_attention_shuffle",
+      "comparator": "atom_attention",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 29,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "boltz_ridge",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 30,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "ordinary_readout",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 31,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "boltz_atom_capacity",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 32,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "boltz_atom_capacity",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 33,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "simple_scalars",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 34,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "simple_scalars",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 35,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "quantum_scalars",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 36,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "quantum_scalars",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 37,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "pooled_fusion",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 38,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "pooled_fusion",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 39,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_concat",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 40,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_concat",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 41,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 42,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 43,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "quantum_only",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 44,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "quantum_only",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 45,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention_free",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 46,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention_free",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 47,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention_shuffle",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 48,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention_shuffle",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 49,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention",
+      "comparator": "pooled_fusion",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 50,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention",
+      "comparator": "atom_concat",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 51,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention",
+      "comparator": "boltz_atom_capacity",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 52,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention",
+      "comparator": "simple_scalars",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 53,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention",
+      "comparator": "quantum_scalars",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 54,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention_free",
+      "comparator": "atom_attention",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 55,
+      "dataset": "primary",
+      "model_seed": "2718",
+      "candidate": "atom_attention_shuffle",
+      "comparator": "atom_attention",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 56,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "boltz_ridge",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 57,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "ordinary_readout",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 58,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "boltz_atom_capacity",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 59,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "boltz_atom_capacity",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 60,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "simple_scalars",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 61,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "simple_scalars",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 62,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "quantum_scalars",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 63,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "quantum_scalars",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 64,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "pooled_fusion",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 65,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "pooled_fusion",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 66,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_concat",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 67,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_concat",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 68,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 69,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 70,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "quantum_only",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 71,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "quantum_only",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 72,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention_free",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 73,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention_free",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 74,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention_shuffle",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 75,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention_shuffle",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 76,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention",
+      "comparator": "pooled_fusion",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 77,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention",
+      "comparator": "atom_concat",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 78,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention",
+      "comparator": "boltz_atom_capacity",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 79,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention",
+      "comparator": "simple_scalars",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 80,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention",
+      "comparator": "quantum_scalars",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 81,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention_free",
+      "comparator": "atom_attention",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 82,
+      "dataset": "primary",
+      "model_seed": "31415",
+      "candidate": "atom_attention_shuffle",
+      "comparator": "atom_attention",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 83,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "boltz_ridge",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 84,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "ordinary_readout",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 85,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "boltz_atom_capacity",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 86,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "boltz_atom_capacity",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 87,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "simple_scalars",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 88,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "simple_scalars",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 89,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "quantum_scalars",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 90,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "quantum_scalars",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 91,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "pooled_fusion",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 92,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "pooled_fusion",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 93,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "atom_concat",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 94,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "atom_concat",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 95,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "atom_attention",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 96,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "atom_attention",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 97,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "quantum_only",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 98,
+      "dataset": "hill_sensitivity",
+      "model_seed": "1729",
+      "candidate": "quantum_only",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 99,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "boltz_ridge",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 100,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "ordinary_readout",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 101,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "boltz_atom_capacity",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 102,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "boltz_atom_capacity",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 103,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "simple_scalars",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 104,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "simple_scalars",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 105,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "quantum_scalars",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 106,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "quantum_scalars",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 107,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "pooled_fusion",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 108,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "pooled_fusion",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 109,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "atom_concat",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 110,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "atom_concat",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 111,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "atom_attention",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 112,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "atom_attention",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 113,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "quantum_only",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 114,
+      "dataset": "hill_sensitivity",
+      "model_seed": "2718",
+      "candidate": "quantum_only",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 115,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "boltz_ridge",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 116,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "ordinary_readout",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 117,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "boltz_atom_capacity",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 118,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "boltz_atom_capacity",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 119,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "simple_scalars",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 120,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "simple_scalars",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 121,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "quantum_scalars",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 122,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "quantum_scalars",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 123,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "pooled_fusion",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 124,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "pooled_fusion",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 125,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "atom_concat",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 126,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "atom_concat",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 127,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "atom_attention",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 128,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "atom_attention",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 129,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "quantum_only",
+      "comparator": "boltz_ridge",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    },
+    {
+      "source_csv_line": 130,
+      "dataset": "hill_sensitivity",
+      "model_seed": "31415",
+      "candidate": "quantum_only",
+      "comparator": "ordinary_readout",
+      "source_seed_column_value": "1729",
+      "source_bootstrap_seed_column_value": "1729"
+    }
+  ]
+}

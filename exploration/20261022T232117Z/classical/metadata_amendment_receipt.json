@@ -1,0 +1,23 @@
+{
+  "changes_to_fit_receipts": false,
+  "changes_to_metrics": false,
+  "changes_to_model_rules": false,
+  "changes_to_predictions": false,
+  "corrected_sensitivity_missing_identities": {
+    "common_cohort_hold_feature_invalid": [
+      "660560",
+      "3243170",
+      "6375556"
+    ],
+    "fixed_hill_sensitivity_exclusion": [
+      "899202",
+      "976329"
+    ]
+  },
+  "coverage_annotation_csv_sha256": "6ca6486790a2ae4edce29a6756829423fdc626b669aef2aa80fdd1c6d40750ff",
+  "coverage_annotation_json_sha256": "5668d319b9feb121579c0e65474f8b7e19757315adbb19835593f36906690d83",
+  "raw_reason_column": "retained in coverage_annotation.csv for audit",
+  "reason": "The raw predictions metadata assigned fixed_hill_sensitivity_exclusion to all five sensitivity missing identities in native rows. Three are feature-invalid common-cohort holds. Two are fixed Hill sensitivity exclusions.",
+  "source_predictions_sha256": "ed3cc985306c0526d84c5648e8a1b96934939ee9fe74f2cd017e214d29f2083c",
+  "status": "METADATA_AMENDMENT_ONLY"
+}

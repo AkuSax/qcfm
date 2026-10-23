@@ -1,0 +1,16 @@
+{
+  "acceptance_field_mismatches": [],
+  "bootstrap_numeric_mismatches": [],
+  "bootstrap_path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\exploration\\20261022T232117Z\\interaction\\postrun\\paired_bootstrap.csv",
+  "bootstrap_rows_independent": 210,
+  "bootstrap_rows_report": 210,
+  "bootstrap_sha256": "ca94b151cb153e7dd484172134f3c201388ad41c0abded4a0433ca44930fedd0",
+  "metric_numeric_mismatches": [],
+  "metric_rows_independent": 102,
+  "metric_rows_report": 102,
+  "pass": true,
+  "reconciliation_errors": [],
+  "report_path": "C:\\Users\\Saxen\\OneDrive\\Documents\\qcfm\\exploration\\20261022T232117Z\\interaction\\postrun\\decision_report.json",
+  "report_sha256": "49292d4df3470b5d4650fdab01c567829388f75ee9479a109ec7547b774ad7fb",
+  "tolerance": 1e-08
+}

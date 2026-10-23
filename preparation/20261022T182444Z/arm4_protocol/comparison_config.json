@@ -1,0 +1,218 @@
+{
+  "scope": "KLK5 primary development; no confirmatory claim",
+  "label": "fitted log10(IC50 in micromolar); lower is stronger measured potency",
+  "source_admission": "Use the 65 rows in the frozen original-curve admission artifact. Require no inequality, observed activity points bracketing 50%, reported and reconstructed estimates in the tested concentration range, and absolute log10 ratio <=0.02. Preserve blank qualifiers as metadata. Do not use blank qualifier equality as the admission rule.",
+  "sensitivity": {
+    "exclude_cids": [
+      "899202",
+      "976329"
+    ],
+    "reason": "Saved Hill-sign conflicts",
+    "n_records": 63,
+    "n_pairs": 129,
+    "combined_prospective_if_stereo_hold_is_later_confirmed": {
+      "records": 60,
+      "coverage_denominator": 65,
+      "pairs": 129,
+      "status": "not a fixed primary sensitivity; do not apply before joins"
+    }
+  },
+  "split": {
+    "source": "splits.csv",
+    "sha256": "137c76616c1940cdddabd021bb6d5d1f9b1ead0a78dddd450de73ac88dbb0888",
+    "outer_folds": 5,
+    "inner_folds": 2,
+    "seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "outer_test_records": [
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "outer_test_pairs": [
+      36,
+      29,
+      28,
+      22,
+      21
+    ],
+    "group_integrity": "A chemical group belongs to one outer-test fold. It stays intact in every outer train/test role and each inner validation assignment."
+  },
+  "pair_rule": "Use only pairs in the same saved chemical group, same assay, and same outer test fold. Train only on pairs whose members are in that outer training role. Store delta as y_a-y_b. Predict it as s_a-s_b. Never train an independent pair scorer.",
+  "comparisons": [
+    {
+      "id": "native",
+      "input": "unchanged saved native score",
+      "fit": "none"
+    },
+    {
+      "id": "boltz_ridge",
+      "input": "both 384-d final affinity inputs x1,x2",
+      "fit": "ridge residual; alpha in [0.1,1,10,100]"
+    },
+    {
+      "id": "ordinary_readout",
+      "input": "both frozen final affinity inputs and their saved final predictors",
+      "fit": "adapt final predictors only; freeze upstream features. This is not published full-head adaptation."
+    },
+    {
+      "id": "boltz_atom_capacity",
+      "input": "deduplicated 128-channel Boltz atom context",
+      "fit": "masked self-attention control; 4 heads, 1 layer, projection 32, FF 128, dropout 0.1; 58,145 parameters"
+    },
+    {
+      "id": "simple_scalars",
+      "input": "Boltz pooled features plus simple molecular descriptors and MMFF94s bound-minus-free energy",
+      "fit": "fold-local scaling and readout"
+    },
+    {
+      "id": "quantum_scalars",
+      "input": "same plus AIM scalar descriptors",
+      "fit": "fold-local scaling and readout"
+    },
+    {
+      "id": "pooled_fusion",
+      "input": "pooled 128-channel Boltz atom context, pooled 256-channel AIM atoms, global Boltz inputs",
+      "fit": "small readout; match capacity where specified"
+    },
+    {
+      "id": "atom_concat",
+      "input": "verified atom-aligned Boltz and AIM vectors",
+      "fit": "concatenate before pooling; small readout"
+    },
+    {
+      "id": "atom_attention",
+      "input": "Boltz atom queries and AIM key/value vectors under graph mask",
+      "fit": "1 layer; 4 heads; projection 32; FF 64; dropout 0.1; 57,953 parameters"
+    },
+    {
+      "id": "quantum_only",
+      "input": "pooled AIM features and the same simple descriptors",
+      "fit": "small readout; tests protein-context contribution"
+    }
+  ],
+  "adapter_loss": {
+    "pair_loss": "chemical-group-balanced mean squared error of within-group label differences",
+    "score_anchor": "0.1 times ligand score mean squared error; includes singleton training records",
+    "max_trainable_parameters": 60000
+  },
+  "fit_selection": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": [
+      0.0001,
+      0.01
+    ],
+    "max_epochs": 200,
+    "early_stop_patience": 20,
+    "inner_metric": "group-balanced pair MAE",
+    "model_fit_budget": 1500,
+    "fit_all_required_comparisons_on_same_labels": true
+  },
+  "primary_metric": "Macro-average within-group MAE of predicted log10 potency differences.",
+  "secondary_metrics": [
+    "within-group pair RMSE",
+    "out-of-fold Spearman rho",
+    "Kendall tau-b",
+    "ligand MAE",
+    "ligand RMSE",
+    "pair ordering accuracy",
+    "exact-label sign accuracy",
+    "sign accuracy for |delta| >=0.3",
+    "coverage and failure reasons",
+    "regressions by group"
+  ],
+  "coverage": {
+    "minimum_feature_coverage": 0.9,
+    "report_all_records": 65,
+    "principal_metrics": "Use the same identities and eligible pairs for every comparator. Report missing rows and exclusions separately.",
+    "fold_gate": "Each outer fold must retain an eligible common within-group pair.",
+    "denominator": "All 65 frozen source records, including records with unavailable features.",
+    "common_set": "Intersect valid predicted identities across every required comparator. Use this exact common identity set and its eligible pairs for all principal paired comparisons.",
+    "stereo_sensitivity": "Do not apply the prospective 3-record stereochemistry hold as a final exclusion yet. Reassess only after atom-identity joins. These records are singletons, so their hold leaves 136 congeneric pairs."
+  },
+  "uncertainty": {
+    "method": "paired chemical-group bootstrap over fixed out-of-fold predictions",
+    "resamples": 5000,
+    "seed": 1729,
+    "limit": "Does not include model-refit uncertainty. Report direction and metric dispersion across the 3 fit seeds."
+  },
+  "promotion_gates": {
+    "quantum_vs_latent_and_readout": "At least 0.10 log10 units and 10% lower primary MAE versus both baselines.",
+    "attention_vs_pooled_and_concat": "At least 0.05 log10 units and 5% lower primary MAE versus both baselines.",
+    "other_controls": "Also improve over matched Boltz-only attention and scalar controls.",
+    "seeds": "Same direction in all 3 seeds.",
+    "bootstrap": "Paired 95% lower bound for MAE reduction must exceed 0.",
+    "ranking": "Spearman drop must not exceed 0.05 against strongest required comparator.",
+    "small_n": "Only exploratory candidate selection. Eight nonsingleton groups do not support independent confirmation."
+  },
+  "feature_manifest_required_before_fit": {
+    "file": "aim_features.npz",
+    "keys": {
+      "cids": "65 unicode IDs in records.csv order",
+      "boltz_atoms": "(65,max_atoms,128), deduplicated head z context",
+      "aim_atoms": "(65,max_atoms,256), AIMNet2 invariant features",
+      "global_boltz": "(65,768), concatenated saved x1 and x2",
+      "atom_mask": "(65,max_atoms), boolean",
+      "allowed": "(65,max_atoms,max_atoms), graph adjacency including self",
+      "simple_scalars": "(65,n_simple), named in companion JSON",
+      "aim_scalars": "(65,n_aim), named in companion JSON",
+      "feature_valid": "(65,), true only when all required features and atom joins pass"
+    },
+    "note": "This schema is a required interface. No AIM feature file exists in this arm yet.",
+    "missing_rows": "Use NaN for unavailable numerical values and false in feature_valid. Keep failure code and reason in feature_failure_ledger_template.csv. Never zero-fill missing features.",
+    "prospective_stereochemistry_hold": {
+      "cids": [
+        "660560",
+        "3243170",
+        "6375556"
+      ],
+      "status": "provisional only; do not exclude before exact joins",
+      "coverage_if_held": "62/65 = 95.3846%; all 3 are singleton groups; 136 pairs remain"
+    }
+  },
+  "checkpoint_dependencies": {
+    "pooled_and_readout_controls": "Verified exact_inputs.npz and saved final predictor inputs/weights.",
+    "atom_fusion": "Saved per-record z arrays and per-record head-context logical hashes; root verified identical heads. Use one 128-channel context.",
+    "native": "Saved corrected score and replay receipt. Keep current native parity limits.",
+    "ordinary_readout": "Both final predictors can be adapted from saved final inputs and final-layer weights. This does not test full affinity-head adaptation.",
+    "stronger_claim": "Pinned full Boltz checkpoint is missing. Do not claim superiority over full published affinity-head fine-tuning."
+  },
+  "gates_before_execution": [
+    "62 atom joins passed; retain 3 stereochemistry-held records in the coverage ledger; complete full-cohort hydrogen and free-conformer preparation",
+    "resolve charged-record scope without hiding records",
+    "complete AIM export and parity/invariance checks in the authorized Python >=3.11 environment",
+    "freeze feature manifest and confirm coverage",
+    "validate the implemented nested runner on the frozen feature bundle without fitting",
+    "obtain model-execution authorization",
+    "obtain explicit GPU-start confirmation only if a GPU VM is needed"
+  ],
+  "limits": [
+    "No full head-adaptation claim.",
+    "No target-transfer claim.",
+    "No first-ever claim.",
+    "No physical-cause claim.",
+    "No ligand-only quantum treatment claim for protein-ligand interactions.",
+    "AIM scalar energy difference is a gas-phase conformer energy gap, not interaction energy."
+  ],
+  "status": "Preparation only. No model was fit and no saved model forward was run.",
+  "parameter_counts": {
+    "atom_attention": 57953,
+    "boltz_atom_capacity": 58145,
+    "pooled_fusion": 55777,
+    "atom_concat": 55409,
+    "all_under_60000": true,
+    "all_within_10_percent_of_atom_attention": true
+  },
+  "fit_implementation_status": {
+    "runnable_fitting_entrypoint": false,
+    "implemented": "frozen data loaders; pair and split verification; masked attention, pooling and concatenation modules; group metrics; bootstrap; synthetic tests",
+    "missing": "Nested fit and selection loop for 10 comparisons; fold-local scaler and imputer fit; ridge and neural inner-fold selection; final outer refits; fit-budget accounting; common-coverage OOF report writer; all secondary metric report writer; prediction-failure receipt writer",
+    "reason": "AIM atom and scalar features are absent. Chemistry and atom joins remain unresolved. Full runner cannot be implemented and validated within this preparation budget."
+  }
+}
